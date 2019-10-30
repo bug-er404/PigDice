@@ -9,4 +9,4 @@ This project implements a simple two player Pig Dice game. Roll two dice till yo
 More instructions will be found if you actually play the game.
 
 ---
-Basically, testing out my new-found knowledge of JavaScript and the jQuery library.
+Basically just testing out my new-found knowledge of JavaScript and the jQuery library.
