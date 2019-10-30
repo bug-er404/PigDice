@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="./css/dieStyle.css" type="text/css" charset="utf-8">
+</head>
+<body>
+    <!--Title-->
+    <div class = "intro">
+        <h1> Welcome to the game of <span id = "gamename"> Pig Dice! </span><h1>
+        <img src = "img/pig.png" alt ="pig dice">
+    </div>
+
+    <!--Get player info-->
+    <div class = "getName">
+        <fieldset><legend> Player info:</legend>
+            <label for = "firstPlayer">First Player*:</label><br>
+            <input id = "firstPlayer" type = "text" placeholder="First player's name"/><br>
+            <br>
+            <label for = "secondPlayer">Second Player*:</label><br>
+            <input id = "secondPlayer" type = "text" placeholder="Second player's name"/><br>
+            <br><br>
+            <button id="startgame" onclick="initiateGame()">Start Game!</button>
+        </fieldset>
+    </div>
+
+    <!--Game instructions-->
+    <div class = "intro"><br>
+        <fieldset>
+            <legend>Instructions:</legend>
+            <ul class = "instructions">
+                <li>Players take turns to roll both dice. They can roll as many times as they 
+                    want in one turn.</li>
+                <li>A player scores the sum of the two dice thrown 
+                    and gradually reaches a higher score as they roll</li>
+                <li> The dice needs to be passed to account for score of that turn</li>
+                <li>If a single number '1' is thrown on either die, the score for that turn is lost
+                    and the turn ends. However a double '1' counts as a 25.</li>
+                <li>First player to 100 wins!</li>
+            </ul>  
+        </fieldset>  
+    </div>
+
+    <!-- Game Area-->
+    <div class = "gamearea">
+        <!-- Player 1 Area -->
+        <div class = "playerarea">
+            <div id = "player1area">
+                <h3 id = "p1name"></h3>
+                <div id = "resultArea"></div>
+                <div id = "rollArea">
+                    <button class="rollDice">Roll Die!</button>
+                    <button class="passTurn">Pass Turn</button>
+                </div>
+                <div id = "diceArea">
+                    <div id = "p1die1"><img src = "img/1.png" id = "dice"></div>
+                    <br>
+                    <div id = "p1die2"><img src = "img/1.png" id = "dice"></div>
+                </div>
+                <div id = "scoreArea">
+                    <p id ="p1score">Total Score: <span></span></p>
+                    <p id ="p1current">Turn Score: <span></span></p>
+                </div>
+            </div>
+        </div>
+        <!--Player 2 Area-->
+        <div class = "playerarea">
+            <div id = "player2area">
+                <h3 id = "p2name"></h3>
+                <div id = "resultArea"></div>
+                <div id = "rollArea">
+                    <button class="rollDice">Roll Die!</button>
+                    <button class="passTurn">Pass Turn</button>
+                </div>
+                <div id = "diceArea">
+                    <div id = "p2die1"><img src = "img/1.png" id = "dice"></div>
+                    <br>
+                    <div id = "p2die2"><img src = "img/1.png" id = "dice"></div>
+                </div>
+                <div id = "scoreArea">
+                    <p id ="p2score">Total Score: <span></span></p>
+                    <p id ="p2current">Turn Score: <span></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End game message-->
+    <div class = "endGameArea"><div id = "flashMessage"></div></div>
+
+    <!--Footer -->
+    <div class = "footer">
+        <hr>    
+        <p>Salil Maharjan</p>
+        <p>Email: <a href="mailto:salilmaharjan@acm.org">
+        salilmaharjan@acm.org</a></p>
+        <p>Ramapo College of New Jersey</p>
+    </div>
+
+    <!--SWEET ALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!--JS/JQuery SCRIPTS-->
+    <!--Jquery CDN(Content Delivery Network)-->  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"      
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="      
+    crossorigin="anonymous"></script>
+    <!--Javascript file-->
+    <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

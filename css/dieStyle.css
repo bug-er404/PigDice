@@ -1,0 +1,237 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+  margin: 50px;
+}
+
+/*GRID ATTRIBUTES*/
+.gamearea {
+  display: none;
+  max-width: 80%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  background: #fff;
+  border-radius: 0.285em;
+  box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
+  margin: 45px auto;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
+/* Player area*/
+.playerarea {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  padding: 0.85em;
+  background: #405e7c;
+  border: 5px solid #1a6d9c;
+  border-radius: 50px;
+}
+
+/* Play area */
+fieldset {
+  font-family: sans-serif;
+  border: 5px solid #1a6d9c;
+  background: #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Player name*/
+fieldset legend {
+  background: #1a6d9c;
+  color: #fff;
+  padding: 5px 10px ;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px #ddd;
+  margin-left: 20px;
+}
+
+/* Title */
+h1{
+  text-align: center;
+  padding: 5px 10px ;
+  font-family: Impact, Charcoal, sans-serif;
+  font-weight: inherit;
+}
+
+/* pig image*/
+.intro img{
+  display: block;
+  max-width: 15%;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  right: 155px;
+}
+
+.intro img:hover{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* span id for game title*/
+#gamename{
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  display: block;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+h3{
+  text-align: center;
+  background: #1a6d9c;
+  color: #fff;
+  padding: 5px 10px ;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px #ddd;
+}
+
+#diceArea{
+  padding-bottom: 50px;
+}
+
+#dice{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+  border-radius: 25%;
+}
+
+#rollArea{
+  text-align: center;
+  display: block;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  height: 90px;
+}
+
+#scoreArea{
+  margin-bottom: 40px;
+}
+
+/* Final score area*/
+#p1score, #p2score{
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  color: #e0dfdc;
+  background-color: #333;
+  height: 30px;
+  padding-top: 5px;
+}
+
+/* Turn score area*/
+#p1current, #p2current{
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+label{
+  margin-top: 30px;
+  display: block;
+  text-transform: uppercase;
+  color: rgb(75, 13, 13);
+  letter-spacing: 2px;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #cdcfcf;
+  margin-top:5px;
+  padding: 10px;
+  color: #333;
+  background-color: #f6f8f8;
+}
+
+button {
+  background: #3296cf;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li{
+  text-align: left;
+}
+
+.winMessage {
+  background: #2db53a;
+  color: #fff;
+  padding: 2px 2px; 
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.tryAgainMessage{
+  content: "New";
+  background: skyblue;
+  color: white;
+  padding: 6px 6px; 
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+#flashMessage {
+  padding: 10px;
+  background: #fffc31;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  border-radius: 100%;
+}
+
+.endGameArea{
+  display: none;
+  height: 20px;
+}
+
+.footer{
+  padding-top: 10px;
+}
+
+.footer p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: grey;
+  text-align: right;
+  font-size: 12px;
+}
